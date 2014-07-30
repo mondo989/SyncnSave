@@ -48,6 +48,11 @@ p {
     font-size: 16px;
 }
 
+footer {
+    background: blue;
+    height: 80px;
+}
+
 .red {
     background: red;
 }
@@ -63,11 +68,21 @@ p {
     margin: 0 auto;
 }
 
+.review {
+    font-style:  italic;
+    padding-bottom: 50px;
+    background: white;
+}
+
 .white-border-bottom {
     border-bottom: 1px white solid;
     width: 80%;
     padding-bottom: 40px;
 
+}
+
+.bottom-space {
+    margin-bottom: 40px;
 }
 
 
@@ -79,16 +94,31 @@ padding-left: 50px;
 
 .top-btn{
     margin: 0 10px;
+    margin-top: 12px;
 }
 
 .call-to-action {
-    background: blue;
+    background: rgb(36, 165, 220);
     color: white;
  }
 
 .sign-in {
     background: white;
     color: black;
+}
+
+.carousel-indicators {
+    color: yellow;
+}
+
+#carousel-example-generic .active {
+    background: red;
+}
+
+.carousel-indicators li {
+    background: blue;
+    color: pink;
+
 }
 
 
@@ -135,12 +165,23 @@ a:after {
 
 
 .navbar-default {
-	background-color: red;
+	background-color: white;
 	border-color: transparent;
+            height: 70px;
 }
 
 .navbar-default .navbar-brand {
-	color: white;
+	color: transparent;
+}
+
+.brand {
+    width: 200px;
+}
+
+.hero-smartphone {
+    width: 250px;
+    height: auto;
+    margin-left: 100px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -169,7 +210,7 @@ i {
 /* HeaderWrap */
 #headerwrap {
 	/* background: url(../img/bg01.jpg) no-repeat center top; */
-	background-color: #3498db;
+	background-color: gray;
 	margin-top: -20px;
 	padding-top:200px;
 	background-attachment: relative;
