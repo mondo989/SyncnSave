@@ -49,8 +49,9 @@ p {
 }
 
 footer {
-    background: blue;
+    background: rgb(26, 118, 186);
     height: 80px;
+
 }
 
 .red {
@@ -61,12 +62,19 @@ footer {
     background: white;
 }
 
+
 .seperator {
     height: 1px;
     background: blue;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
+
+.mid-sep {
+  background: gray;   
+  height: 9px;
+}
+
 
 .review {
     font-style:  italic;
@@ -95,7 +103,18 @@ padding-left: 50px;
 .top-btn{
     margin: 0 10px;
     margin-top: 12px;
+    transition: .41s;
 }
+
+.top-btn:hover {
+    background: red;
+    
+}
+
+.btn-warning {
+    border-color: #f2f2f2;
+}
+
 
 .call-to-action {
     background: rgb(36, 165, 220);
@@ -170,9 +189,14 @@ a:after {
             height: 70px;
 }
 
-.navbar-default .navbar-brand {
-	color: transparent;
+.navbar-default .navbar-toggle {
+
+    border-color: #f1f1f1;
+    margin-top: 15px; 
+    margin-right: 20px;
+    transition: .41s;
 }
+
 
 .brand {
     width: 200px;
@@ -181,7 +205,7 @@ a:after {
 .hero-smartphone {
     width: 250px;
     height: auto;
-    margin-left: 100px;
+
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -190,10 +214,18 @@ a:after {
 
 /* Helpers */
 
-.mt {
-	margin-top: 40px;
-	margin-bottom: 40px;
+.md {
+    width: 80%;
+    margin: 0 auto;
 }
+
+
+.mt {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+
 
 .form-control {
 	height: 42px;
