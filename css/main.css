@@ -241,13 +241,13 @@ i {
 
 /* HeaderWrap */
 #headerwrap {
-	/* background: url(../img/bg01.jpg) no-repeat center top; */
-	background-color: gray;
-	margin-top: -20px;
+	background: url(../img/cpu.png) no-repeat center top; 
+	background-color: black;
+	margin-top: 1px;
 	padding-top:200px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 150px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
