@@ -65,14 +65,26 @@ footer {
 
 .seperator {
     height: 1px;
-    background: blue;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
 }
 
 .mid-sep {
-  background: gray;   
-  height: 9px;
+  background: #f2f2f2;   
+  height: 6px;
+}
+
+.left-border {
+    border-right: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+
+.right-border {
+    border-left: 1px gray solid;
+    border-top: 1px gray solid;
 }
 
 
@@ -84,9 +96,12 @@ footer {
 
 .white-border-bottom {
     border-bottom: 1px white solid;
-    width: 80%;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+}
 
+.four-icon {
+    width: 150px;
+    max-height: 120px;
 }
 
 .bottom-space {
@@ -95,8 +110,12 @@ footer {
 
 
 .download {
-    margin-top: 30px;
-padding-left: 50px;
+    margin-top: 50px;
+    padding: 25px 70px;
+    
+    
+
+
 
 }
 
@@ -119,6 +138,15 @@ padding-left: 50px;
 .call-to-action {
     background: rgb(36, 165, 220);
     color: white;
+    -webkit-transition: .4s;
+       -moz-transition: .4s;
+        -ms-transition: .4s;
+         -o-transition: .4s;
+            transition: .4s;
+ }
+
+ .call-to-action:hover {
+   
  }
 
 .sign-in {
@@ -244,7 +272,7 @@ i {
 	background: url(../img/cpu.png) no-repeat center top; 
 	background-color: black;
 	margin-top: 1px;
-	padding-top:200px;
+	padding-top: 90px;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 150px;
@@ -262,10 +290,16 @@ i {
 }
 
 #headerwrap h1 {
-	margin-top: 60px;
+
 	margin-bottom: 15px;
 	color: white;
 	font-size: 45px;
 	font-weight: 300;
 	letter-spacing: 1px;
+}
+
+.rest > h1 {
+    margin-bottom: 35px;
+    font-size: 40px;
+    
 }
