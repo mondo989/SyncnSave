@@ -63,6 +63,7 @@ footer {
 
 .white {
     background: white;
+    margin-top: 20px;
 }
 
 .purple {
@@ -92,6 +93,7 @@ footer {
 .mid-sep {
   background: #f2f2f2;   
   height: 6px;
+  margin-top: 40px;
 }
 
 .left-border {
@@ -166,6 +168,8 @@ width: 25%;
 
 .footer-icon {
     float: right;    
+      margin-left: 10px;
+      width: 17%;
 }
 
 
@@ -181,7 +185,7 @@ width: 25%;
 }
 
 .top-btn:hover {
-    background: red;
+    background: #f5f5f5;
     
 }
 
@@ -398,17 +402,9 @@ margin-top: 70px;
         width: 220px;
     }
 
-    .footer-icon {
-        width: 18%;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
+    
 
 }
 
   
 
-
-@media screen {
-    
-}
