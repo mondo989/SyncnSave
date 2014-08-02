@@ -65,10 +65,15 @@ footer {
 }
 
 .red {
-
     background: none repeat scroll 0% 0% #000;
     margin-top: 70px;
-    opacity: 0.75;
+    opacity: 0.65;
+    padding-bottom: 40px;
+    border-radius: 6px;
+}
+
+.right {
+    text-align: center;
 
 }
 
@@ -166,7 +171,7 @@ footer {
 }
 
 .learn-more {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .four-icon {
@@ -485,9 +490,7 @@ a:after {
    -moz-animation: slideDownRetourn 1.25s ease-Out;
    -ms-animation: slideDownRetourn 1.25s ease-Out;
    -o-animation: slideDownRetourn 1.25s ease-Out;
-   animation: slideDownRetourn 1.25s ease-Out;
-
-    
+   animation: slideDownRetourn 1.25s ease-Out; 
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -560,6 +563,15 @@ margin-top: 70px;
     margin-bottom: 35px;
     font-size: 40px;
     
+}
+
+.phone-info-screenshot {
+    width: 140px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 
@@ -696,7 +708,6 @@ margin-top: 70px;
     background: rgb(26, 118, 186);
     height: 350px;
     padding-top: 60px;
-    text-align: center;
     color: white;
 }
 
@@ -708,6 +719,7 @@ margin-top: 70px;
     background: rgb(26, 118, 186);
     height: 350px;
     padding-top: 60px;
+    color: white;
 }
 
 .safe {
@@ -720,7 +732,7 @@ margin-top: 70px;
     padding-top: 60px;
 }
 
-
+/*  1st break from media queries */
 @media (max-width: 995px) {
   .left-border{
         -webkit-transition: 1.5s;
@@ -746,8 +758,13 @@ margin-top: 70px;
     }
 
     .hero-smartphone {
-        width: 220px;
+        display: none;
     }
+
+    .phone-info-screenshot {
+        display: none;
+    }
+
 }
 
   
