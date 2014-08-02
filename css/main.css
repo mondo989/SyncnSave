@@ -177,7 +177,10 @@ width: 25%;
 
 .footer > li {
     display: inline;
-    
+    color: white;
+}
+
+.footer > li > a {
     color: white;
 }
 
