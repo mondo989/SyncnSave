@@ -57,6 +57,13 @@ footer {
 
 }
 
+.stick-bottom {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;   
+}
+
 .red {
 
     background: none repeat scroll 0% 0% #000;
@@ -68,6 +75,10 @@ footer {
 .white {
     background: white;
     margin-top: 20px;
+}
+
+.font-white{
+    color: white;
 }
 
 .purple {
@@ -205,10 +216,24 @@ width: 25%;
 .footer-icon {
     float: right;    
     margin-left: 10px;
-    width: 17%;
+    width: 15%;
     max-width: 60px;
     margin-top: 10px;
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
 }
+
+.footer-icon:hover {
+    -webkit-transform: scale(1.27);
+    -moz-transform: scale(1.27);
+    -o-transform: scale(1.27);
+    -ms-transform: scale(1.27);
+    transform: scale(1.27);
+}
+
 
 
 .download:hover {
@@ -251,7 +276,7 @@ width: 25%;
 
  .call-to-action:hover {
     color: white;
-    background: green;
+    background: rgb(17, 117, 188);
  }
 
 .sign-in {
@@ -301,7 +326,7 @@ h8 {
 }
 
 .question {
-    color: blue;
+    color: rgb(36, 165, 220);
     font-size: 20px;
 }
 
@@ -341,13 +366,13 @@ h8 {
 }
 
 .hero-button:hover {
-  background: white;
+  background: rgb(17, 117, 188);
   -webkit-transition: .51s;
      -moz-transition: .51s;
       -ms-transition: .51s;
        -o-transition: .51s;
           transition: .51s;
-      color: black;
+      color: white;
 }
 
 .hero-button:active {
@@ -456,6 +481,11 @@ a:after {
 .hero-smartphone {
     width: 250px;
     height: auto;
+     -webkit-animation: slideDownRetourn 1.25s ease-Out;
+   -moz-animation: slideDownRetourn 1.25s ease-Out;
+   -ms-animation: slideDownRetourn 1.25s ease-Out;
+   -o-animation: slideDownRetourn 1.25s ease-Out;
+   animation: slideDownRetourn 1.25s ease-Out;
 
     
 }
@@ -533,7 +563,7 @@ margin-top: 70px;
 }
 
 
-/* HeaderWrap */
+/* FAQ Wrap */
 #faqwrap {
     background: url('../img/telemarketer.jpg') no-repeat center top; 
     background-color: black;
@@ -556,7 +586,28 @@ margin-top: 70px;
     background-size: cover;
 }
 
+/* About Wrap */
+#aboutwrap {
+    background: url('../img/about.jpg') no-repeat center top; 
+    background-color: black;
+    margin-top: 3px;
+    padding-top: 90px;
 
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+     
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 .slideUpRetourn {
   -webkit-animation-name: slideUpRetourn;
@@ -569,47 +620,104 @@ margin-top: 70px;
 
 @-moz-keyframes slideUpRetourn {
   0% {
+    opacity: 0;
     -moz-transform-origin: 0 0;
     -moz-transform: translateY(-100%);
   }
 
+  80%{
+      opacity: .2;
+  }
+
   100% {
+    opacity: 1;
     -moz-transform-origin: 0 0;
     -moz-transform: translateY(0%);
   }
 }
 @-webkit-keyframes slideUpRetourn {
   0% {
+    opacity: 0;
     -webkit-transform-origin: 0 0;
     -webkit-transform: translateY(-100%);
   }
+    80% {
+      opacity: .2;
+  }
 
   100% {
+    opacity: 1;
     -webkit-transform-origin: 0 0;
     -webkit-transform: translateY(0%);
   }
 }
 @-o-keyframes slideUpRetourn {
   0% {
+    opacity: 0;
     -o-transform-origin: 0 0;
     -o-transform: translateY(-100%);
   }
-
+  80%{
+      opacity: .2;
+  }
   100% {
+    opacity: 1;
     -o-transform-origin: 0 0;
     -o-transform: translateY(0%);
   }
 }
 @-ms-keyframes slideUpRetourn {
   0% {
+    opacity: 0;
     -ms-transform-origin: 0 0;
     -ms-transform: translateY(-100%);
   }
-
+  80%{
+      opacity: .2;
+  }
   100% {
+    opacity: 1;
     -ms-transform-origin: 0 0;
     -ms-transform: translateY(0%);
   }
+}
+
+
+
+
+
+/* Sections section */
+.sync {
+    height: 350px;
+    padding-top: 60px;
+}
+
+.scan {
+    background: rgb(26, 118, 186);
+    height: 350px;
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+}
+
+.scan>h1{
+    color: white;
+}
+
+.secure {
+    background: rgb(26, 118, 186);
+    height: 350px;
+    padding-top: 60px;
+}
+
+.safe {
+    height: 350px;
+    padding-top: 60px;
+}
+
+.sense {
+    height: 350px;
+    padding-top: 60px;
 }
 
 
