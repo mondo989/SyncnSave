@@ -44,6 +44,14 @@ h4 {
              margin-bottom: 10px;
 }
 
+.main-header {
+    font-size: 40px;
+     font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
@@ -54,7 +62,12 @@ p {
 footer {
     background: rgb(26, 118, 186);
     height: 100px;
+    position: relative;
+    z-index: 9000;
+}
 
+.faq {
+    margin-top: 30px;
 }
 
 .stick-bottom {
@@ -68,18 +81,20 @@ footer {
 .red {
     background: none repeat scroll 0% 0% #000;
     margin-top: 70px;
-    opacity: 0.65;
-    padding-bottom: 40px;
+    opacity: 0.7;
+    padding-bottom: 30px;
     border-radius: 6px;
 }
 
 .right {
-    text-align: center;
+    text-align: left;
     margin-top: 12px;
+    margin-left: 60px;
 }
 
 .right > li {
     font-size: 20px;
+    
 }
 
 .white {
@@ -121,6 +136,14 @@ footer {
     margin-bottom: 50px;
     margin-top: 50px;
 }
+.about-seperator {
+    height: 1px;
+    width: 30%;
+    background: white;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
 
 .mid-sep {
   background: #f2f2f2;   
@@ -262,7 +285,7 @@ width: 25%;
     margin: 0 10px;
     margin-top: 12px;
     transition: .41s;
-    font-weight: 600;
+
 }
 
 
@@ -322,8 +345,11 @@ h8 {
     color: yellow;
 }
 
+
+
 #carousel-example-generic .active {
-    background: transparent;
+    background: white;
+
 }
 
 .carousel-inner {
@@ -500,12 +526,19 @@ a:after {
 
 .hero-smartphone {
     width: 250px;
-    height: auto;
      -webkit-animation: slideDownRetourn 1.25s ease-Out;
    -moz-animation: slideDownRetourn 1.25s ease-Out;
    -ms-animation: slideDownRetourn 1.25s ease-Out;
    -o-animation: slideDownRetourn 1.25s ease-Out;
    animation: slideDownRetourn 1.25s ease-Out; 
+   margin-top: 40px;
+   margin-left: 30px;
+   z-index: 0;
+}
+
+.phone-holder {
+    margin-bottom: -190px;
+    z-index: 1;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -517,12 +550,15 @@ a:after {
 .md {
     width: 80%;
     margin: 0 auto;
+    z-index: 300;
+    background: white;
 }
 
 
 .mt {
     margin-top: 60px;
     margin-bottom: 60px;
+
 }
 
 .bt {
@@ -565,7 +601,7 @@ i {
     background-size: cover;
 }
 
-#headerwrap h1 {
+#headerwrap .main-header {
 margin-bottom: 5px;
 color: white;
 font-size: 45px;
@@ -577,28 +613,83 @@ margin-top: 70px;
 .rest > h1 {
     margin-bottom: 35px;
     font-size: 40px;
-    
 }
 
-.phone-info-screenshot {
-    width: 140px;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
+.rest {
+    width: 100%;
+    height: 350px;
+    padding-top: 40px;
+    z-index: 200;
+    border-bottom: 7px solid #f3f3f3;
+} 
+
+.phone-info {
+    background: red;
     margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 
+#sync {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-right: 20px;
+    z-index: -20;
+}
+
+#scan {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+#safe {
+      width: 200px;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-right: 20px;
+    z-index: -20;
+}
+
+
+#secure {
+     width: 200px;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+#sense {
+     width: 200px;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-right: 20px;
+}
 
 /* FAQ Wrap */
 #faqwrap {
-    background: url('../img/telemarketer.jpg') no-repeat center top; 
+    background: url('../img/telemarketer.jpg') no-repeat scroll center top / cover #000;
+margin-top: -40px;
     background-color: black;
     margin-top: 3px;
-    padding-top: 90px;
-
+    padding-top: 50px;
     background-attachment: relative;
-    background-position: center center;
     min-height: 500px;
     width: 100%;
     
@@ -724,6 +815,9 @@ margin-top: 70px;
     height: 350px;
     padding-top: 60px;
     color: white;
+    position: relative;
+    z-index: 200;
+  
 }
 
 .scan>h1{
@@ -735,16 +829,24 @@ margin-top: 70px;
     height: 350px;
     padding-top: 60px;
     color: white;
+    position: relative;
+    z-index: 900;
 }
 
 .safe {
     height: 350px;
     padding-top: 60px;
+    position: relative;
+    z-index: 900;
+    background: white;
 }
 
 .sense {
     height: 350px;
     padding-top: 60px;
+    background: white;
+    position: relative;
+    z-index: 900;
 }
 
 /*  1st break from media queries */
@@ -785,13 +887,12 @@ margin-top: 70px;
   
 
 @media (min-width: 995px) {
-
     .four-horizontal-seperator-b {
         display: none;
     }
 }
 
-
+/*  Smallest size */
 @media (max-width: 480px) {
     h8 {
         font-size: 17px;
@@ -801,18 +902,36 @@ margin-top: 70px;
         font-size: 33px;
     }
 
-     h1 {
-        font-size: 10px;
+    #headerwrap .main-header {
+        font-size: 30px;
+        margin-top: 12px;
+    }
+    h6.extra-info {
+        font-size: 15px;
+        line-height: 22px;
     }
 
     .footer-position {
-
         margin: 0 auto;
         text-align: center;
     }
 
     .font-size {
         font-size: 120px;
+    }
+
+    h1.h1-font{
+        font-size: 32px;
+        margin-top: -20px;
+    }
+
+    .right>li{
+        font-size: 14px;
+        text-align: left;
+        margin-right: 0px;
+    }
+    h4 {
+        font-size: 20px;
     }
 
 }
