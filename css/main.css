@@ -41,7 +41,7 @@ h4 {
 	font-weight: 400;
 	font-size: 30px;
              margin-top: -9px;
-             margin-bottom: 4px;
+             margin-bottom: 10px;
 }
 
 /* Paragraph & Typographic */
@@ -53,15 +53,16 @@ p {
 
 footer {
     background: rgb(26, 118, 186);
-    height: 120px;
+    height: 100px;
 
 }
 
 .stick-bottom {
-    position: absolute;
+    margin-top: 100px;
     bottom:0;
     left: 0;
     right: 0;   
+    position: absolute;
 }
 
 .red {
@@ -74,7 +75,11 @@ footer {
 
 .right {
     text-align: center;
+    margin-top: 12px;
+}
 
+.right > li {
+    font-size: 20px;
 }
 
 .white {
@@ -146,13 +151,16 @@ footer {
 .friends-background {
     background: url("../img/friends-phones.png") no-repeat scroll center center / cover #000;
     width: auto;
+    margin: 80px 0;
     height: 500px;
+    border-top: 8px solid #f3f3f3;
+    border-bottom: 8px solid #f3f3f3;
 
 }
 
 
 .play-button {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 .feedback {
@@ -163,6 +171,7 @@ footer {
     font-style:  italic;
     padding-bottom: 50px;
     background: white;
+    font-size: 20px;
 }
 
 .white-border-bottom {
@@ -176,7 +185,7 @@ footer {
 
 .four-icon {
 margin-bottom: 1px;
-margin-top: 25px;
+margin-top: 45px;
 height: auto;
 width: 25%;
 
@@ -247,12 +256,13 @@ width: 25%;
 
 
 .top-btn{
-    -webkit-box-shadow: 0 0 .5px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 0 .5px 0 rgba(0,0,0,0.75);
-    box-shadow: 0 0 .5px 0 rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.75);
     margin: 0 10px;
     margin-top: 12px;
     transition: .41s;
+    font-weight: 600;
 }
 
 
@@ -292,13 +302,13 @@ width: 25%;
 
 .mg-bt {
     padding: 10px;
-    
     color: white;
 }
 
 .icon-photo {
     margin: 0 auto;
     border-radius: 50%;
+    width: 80px;
 
 }
 
@@ -315,6 +325,11 @@ h8 {
 #carousel-example-generic .active {
     background: transparent;
 }
+
+.carousel-inner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
 
 .carousel-indicators li {
     background: #000;
@@ -607,7 +622,7 @@ margin-top: 70px;
 
     background-attachment: relative;
     background-position: center center;
-    min-height: 500px;
+    min-height: 350px;
     width: 100%;
      
     -webkit-background-size: 100%;
@@ -774,4 +789,30 @@ margin-top: 70px;
     .four-horizontal-seperator-b {
         display: none;
     }
+}
+
+
+@media (max-width: 480px) {
+    h8 {
+        font-size: 17px;
+    }
+    
+    .mg-bt {
+        font-size: 33px;
+    }
+
+     h1 {
+        font-size: 10px;
+    }
+
+    .footer-position {
+
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .font-size {
+        font-size: 120px;
+    }
+
 }
