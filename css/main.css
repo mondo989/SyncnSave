@@ -79,11 +79,9 @@ footer {
 
 .red {
     background: none repeat scroll 0% 0% #000;
-padding-top: 150px;
-padding-bottom: 158px;
-opacity: 0.69;
-border-radius: 6px;
-margin-top: -82px;
+    opacity: 0.69;
+    border-radius: 6px;
+    margin-top: 102px;
 }
 
 .right {
@@ -185,7 +183,7 @@ margin-top: -82px;
 
 
 .play-button {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .feedback {
@@ -196,6 +194,7 @@ margin-top: -82px;
     font-style:  italic;
     padding-bottom: 50px;
     background: white;
+    margin-top: 20px;
     font-size: 20px;
 }
 
@@ -250,6 +249,10 @@ width: 25%;
     margin-top: 30px;
     color: white;
 
+}
+
+.align-icons {
+  text-align: center;
 }
 
 .footer-icon {
@@ -353,14 +356,14 @@ h8 {
 
 
 
-#carousel-example-generic .active {
-    background: white;
+#carousel-example-generic >.active {
+    background: blue;
 
 }
 
 .carousel-inner {
     margin-top: 30px;
-    margin-bottom: 30px;
+
     }
 
 .carousel-indicators li {
@@ -621,10 +624,11 @@ i {
 #headerwrap .main-header {
 margin-bottom: 5px;
 color: white;
-font-size: 45px;
+font-size: 65px;
 font-weight: 300;
 letter-spacing: 1px;
 margin-top: 70px;
+font-variant: small-caps;
 }
 
 .rest > h1 {
@@ -726,14 +730,14 @@ margin-top: 70px;
 
 /* About Wrap */
 #aboutwrap {
-    background: url('../img/about.jpg') no-repeat center top; 
+    background: url('../img/office.jpg') no-repeat center top; 
     background-color: black;
     margin-top: 3px;
     padding-top: 90px;
 
     background-attachment: relative;
     background-position: center center;
-    min-height: 400px;
+    min-height: 450px;
     width: 100%;
      
     -webkit-background-size: 100%;
@@ -961,7 +965,7 @@ margin-top: -40px;
     }
 
     #headerwrap .main-header {
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 12px;
     }
     h6.extra-info {
@@ -972,6 +976,7 @@ margin-top: -40px;
     .footer-position {
         margin: 0 auto;
         padding-top: 20px;
+        
     }
 
     .font-size {
@@ -986,8 +991,14 @@ margin-top: -40px;
     .right>li{
         font-size: 14px;
         text-align: left;
-
     }
+    .right {
+    text-align: left;
+    margin-top: 12px;
+    padding: 0 2px;
+    margin-left: 15px;
+    }
+
     h4 {
         font-size: 20px;
     }
@@ -1011,13 +1022,19 @@ margin-top: -40px;
 
 @media (max-width: 763px) {
     footer {
-        height: 140px;
+        height: 170px;
     }
 
     .copyright {
         font-size: 12px;
     }
 
+   .footer-position {
+        margin: 0 auto;
+        padding-top: 20px;
+        margin-left: -40px;
+
+    }
 
 .red{
 padding-top: 396px;
@@ -1039,4 +1056,6 @@ margin-top: 0;
     border-radius: 6px;
     margin-top: -82px;
     }
-}
+
+  
+  }
