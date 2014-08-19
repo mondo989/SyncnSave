@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/favicon.png">
@@ -17,6 +17,8 @@
 
     <!-- Fonts from Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -71,11 +73,25 @@
 
    </div><!-- /container -->
 </div><!-- /headerwrap -->
-	
-
-	
+		
 	<section class="rest">
-		<div class="row mt md centered">
+          <div class="lock-circle"
+              data-0="opacity: 0;"
+              data-150="opacity: 0;"
+              data-200="opacity: 1; width: 100px; height: 100px;" 
+              data-400="width: 170px; height: 170px;" 
+          >
+          <div class="lockk"
+              data-0="opacity: 0;"
+              data-150="opacity: 0.01; width: 40px; height: 65px;"
+              data-400="opacity: 1; width: 80px; height: 130px" 
+
+
+                  ></div>
+             <!--  <img src="img/lock.png" class="lock" alt="">  -->
+          </div>
+
+		<div class="row md centered">
                 <div class="col-md-1"></div>
 			<div class="col-md-10 ">
 				<h1 class="h1-font">Rest assured, we've got you insured.</h1>
@@ -86,7 +102,7 @@
       </section>
 
 
-<div class="container">
+<div class="container mt">
     <div class="row  centered">
 	   <div class="col-md-6">
 	  	 <img class="four-icon" src="img/virus-block.png" alt="">
@@ -141,11 +157,15 @@
           <div class="col-md-6 ">
           </div>
               <div class="row bt centered">
-                 <div class="col-md-12 red ">
+                 <div class="col-md-12 red
+              data-200="opacity: 0;"
+              data-1300="opacity: 0;" 
+              data-1800="opacity: .71;"
+                 ">
                   <!-- Friends fonts -->
                     <h1 class="mg-bt">Friends help friends!</h1>
                         <hr>
-                    <h8>Nominate friends that can help find, lock and secure your phone, using their phone.</h8>
+                    <h8>Choose close friends that can help you find, lock, and secure your phone, using their phone.</h8>
                  </div>
             </div><!-- /row -->
           </div>
@@ -153,44 +173,59 @@
 </div><!-- /row -->
 
 		<!--The CAROUSEL goes here -->
-    <h1>Play Store Reviews</h1>
-      <div class="row feedback centered">
-         <div class="col-lg-6 col-lg-offset-3">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-              </ol>
-            
-              <!-- Wrapper for slides -->
-           <div class="carousel-inner">
-               <div class="item active">
-                 <img class="icon-photo" src="https://lh6.googleusercontent.com/-fzIvYEGOPuI/AAAAAAAAAAI/AAAAAAAAAzE/Dt0Ke3WN01U/w48-c-h48/photo.jpg" alt="">
-                    <p class="review">"Excellent." <br>-Keshavlal Soni</p>
-                </div>
-                <div class="item">
-                    <img class="icon-photo" src="https://lh4.googleusercontent.com/-NX8IdglvI8o/AAAAAAAAAAI/AAAAAAAAALk/HbK5_PXNEns/w48-c-h48/photo.jpg" alt="">
+<h1>Play Store Reviews</h1>
+<div id="carousel">           
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+          <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+            <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+             <div class="active item">
+                  <img class="icon-photo" src="https://lh6.googleusercontent.com/-fzIvYEGOPuI/AAAAAAAAAAI/AAAAAAAAAzE/Dt0Ke3WN01U/w48-c-h48/photo.jpg" alt="">
+              <blockquote>
+                  <p class="review">"Excellent." <br>-Keshavlal Soni</p>
+              </blockquote>
+            </div>
+            <div class="item">
+               <img class="icon-photo" src="https://lh5.googleusercontent.com/-uEWeXKs5_rA/AAAAAAAAAAI/AAAAAAAABaY/Rhs_DiwTBQ8/w48-c-h48/photo.jpg" alt="">
+              <blockquote>
+                 <p class="review">"ใช้ดีมาก ชอบตรงที่หาเครื่องหายโดยให้เพื่อนช่วยได้ มีแล้วรู้สึกอุ่นใจมากขึ้นเยอะ" <br>-Than Rassadanukul</p>
+              </blockquote>
+            </div>
+            <div class="item">
+              <blockquote>
+               <img class="icon-photo" src="https://lh4.googleusercontent.com/-NX8IdglvI8o/AAAAAAAAAAI/AAAAAAAAALk/HbK5_PXNEns/w48-c-h48/photo.jpg" alt="">
                     <p class="review">"Nice Love it 5star." <br>-Artis Robinson</p>      
-                </div>
-                <div class="item">
-                     <img class="icon-photo" src="https://lh4.googleusercontent.com/-F0NggBZoPWU/AAAAAAAAAAI/AAAAAAAAAxI/B58UNg_5AhM/w48-c-h48/photo.jpg" alt="">
-                    <p class="review">"Best App One of the best app available on Google Play" <br>-Sathvik Rao</p>
-                </div>
-                 <div class="item">
-                     <img class="icon-photo" src="https://lh5.googleusercontent.com/-uEWeXKs5_rA/AAAAAAAAAAI/AAAAAAAABaY/Rhs_DiwTBQ8/w48-c-h48/photo.jpg" alt="">
-                    <p class="review">"ใช้ดีมาก ชอบตรงที่หาเครื่องหายโดยให้เพื่อนช่วยได้ มีแล้วรู้สึกอุ่นใจมากขึ้นเยอะ" <br>-Than Rassadanukul</p>
-                </div>
-              </div>
-
-              </div>
-            </div>         
-         </div><!-- /col-lg-8 -->
-      </div><!-- /row -->
+              </blockquote>
+            </div>
+            <div class="item">
+              <blockquote>
+              <img class="icon-photo" src="https://lh4.googleusercontent.com/-F0NggBZoPWU/AAAAAAAAAAI/AAAAAAAAAxI/B58UNg_5AhM/w48-c-h48/photo.jpg" alt="">
+              <p class="review">"Best App One of the best app available on Google Play" <br>-Sathvik Rao</p>
+              </blockquote>
+            </div>
 
 
+
+
+ 
+                    
+
+          </div>
+        </div>
+      </div>              
+    </div>
+  </div>
+</div>
 
 
 
@@ -273,5 +308,13 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Skrollr  -->
+     <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+        </script>
+
   </body>
 </html>

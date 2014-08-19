@@ -9,7 +9,7 @@
 
 body {
   background-color: #fff;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -82,6 +82,7 @@ footer {
     opacity: 0.69;
     border-radius: 6px;
     margin-top: 102px;
+    padding-bottom: 30px;
 }
 
 .right {
@@ -136,6 +137,8 @@ footer {
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
+
 .about-seperator {
     height: 1px;
     width: 30%;
@@ -346,31 +349,69 @@ h8 {
 }
 
 
-.carousel-indicators {
-    color: yellow;
+
+
+
+/*-------------------------------*/
+/*      Code snippet by          */
+/*      @maridlcrmn              */
+/*-------------------------------*/
+
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.carousel-indicators>#carousel-example-generic {
-    color: blue;
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 
 
-#carousel-example-generic >.active {
-    background: blue;
+/*-------------------------------
+       Carousel Fade Transition   
+        2nd Carousel
+-------------------------------*/
 
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #1A76BA;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
 }
 
-.carousel-inner {
-    margin-top: 30px;
-
-    }
-
-.carousel-indicators li {
-    background: #000;
-    color: pink;
-
+.carousel {
+  margin-bottom: 40px;
 }
+
+
+
 
 .extra-info {
     color: white;
@@ -572,6 +613,7 @@ a:after {
     margin: 0 auto;
     z-index: 300;
     background: white;
+    padding-top: 15px;
 }
 
 
@@ -638,11 +680,39 @@ font-variant: small-caps;
 
 .rest {
     width: 100%;
-    height: 350px;
-    padding-top: 40px;
+    height: 500px;
+    margin-top: 30px;
     z-index: 200;
     border-bottom: 7px solid #f3f3f3;
 } 
+
+.lock  {
+    width: 50px;
+    height: 50px;
+    background: red;
+    margin: 0 auto;
+}
+
+.lockk  {
+    width: 80px;
+    height: 130px;
+    margin: 0 auto;
+    background: url('../img/lock.png') ;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    opacity: 0;
+    position: relative;
+}
+
+.lock-circle {
+    background: #24A5DC;
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    z-index:-10;
+    margin: 0 auto;
+    padding-top: 20px;
+}
 
 .phone-info {
     background: red;
@@ -730,7 +800,7 @@ font-variant: small-caps;
 
 /* About Wrap */
 #aboutwrap {
-    background: url('../img/office.jpg') no-repeat center top; 
+    background: url('../img/office.png') no-repeat center top; 
     background-color: black;
     margin-top: 3px;
     padding-top: 90px;
