@@ -58,15 +58,21 @@
 
   <section class="sync">
       <div class="row">
-
-        <div class="col-md-4">
-        <img class="phone-info-screenshot"  id="sync" src="./img/sync.png" alt="">
+<!-- Phone A div -->
+        <div class="col-md-4" 
+              data-0="opacity: .120;"
+              data-400="opacity: 1;"
+        >
+            <img class="phone-info-screenshot"  id="sync" src="./img/sync.png" alt="">
         </div>
-         <div class="col-md-6 ">
+         <div class="col-md-6">
             <h1>Sync</h1>
             <h4>Automatically backup personal data.</h4>
             <hr>
-                <ul class="right">
+                <ul class="right"
+                     data-0="opacity: 0.4;"
+                     data-400="opacity: 1;"
+                >
                 <li>Backup your contacts, SMS, Call logs, photo’s, calendar and photo’s</li>
                  <li>Choose backup frequency – daily, weekly, automatically</li>
                 <li>Restore your data to any Android Phone from syncNscan.com</li><br> 
@@ -84,13 +90,22 @@
                 <h1 class="font-white">Scan</h1>
                 <h4 class="font-white">Track and delete viruses and spam</h4>
                 <hr>
-                    <ul class="right">
+                    <ul class="right"
+                        data-600="opacity: 0.4;"
+                        data-800="opacity: 1;"
+
+                    >
                          <li> Detect and delete viruses, Trojans and spyware</li>
                           <li>Block malicious apps, phishing sites and spam SMS</li>
                           <li>Identify personal information that installed apps access</li><br> 
                     </ul>
                </div>
-                <div class="col-md-3">
+                <div class="col-md-3"
+                     data-200="opacity: 0.01";
+                     data-400="opacity: 0.6;"
+                     data-600="opacity: 1;"
+
+                >
                     <img class="phone-info-screenshot" id="scan" src="./img/scan.png" alt="">
                 </div>
               <div class="col-md-1"></div>
@@ -98,7 +113,12 @@
   </section>
 
   <section class="safe">
-    <div class="row">
+    <div class="row" 
+                     data-500="opacity: 0.01";
+                     data-800="opacity: 0.5;"
+                     data-900="opacity: 1;"
+
+    >
       <div class="col-md-1"></div>
         <div class="col-md-3">
             <img class="phone-info-screenshot" id="safe" src="./img/safe.png" alt="">
@@ -120,7 +140,11 @@
   </section>
 
   <section class="secure">
-    <div class="row">
+    <div class="row"
+                     data-900="opacity: 0.01";
+                     data-1010="opacity: 0.5;"
+                     data-1100="opacity: 1;"
+             >
       <div class="col-md-2"></div>
         <div class="col-md-6">
         <h1 class="font-white">Secure</h1>
@@ -141,7 +165,12 @@
   </section>
 
 <section class="sense">
-    <div class="row">
+    <div class="row"
+                     data-1300="opacity: 0.01";
+                     data-1410="opacity: 0.5;"
+                     data-1500="opacity: 1;"
+
+    >
       <div class="col-md-1"></div>
         <div class="col-md-3">
             <img class="phone-info-screenshot" id="sense" src="./img/sense.png" alt="">
@@ -199,6 +228,13 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+  
+    <!-- Skrollr  -->
+     <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+        </script>
+
 
 
   </body>

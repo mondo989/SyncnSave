@@ -14,7 +14,6 @@ body {
     font-size: 16px;
     color: #555;
     overflow-x: hidden;
-
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
@@ -339,7 +338,7 @@ width: 25%;
 .icon-photo {
     margin: 0 auto;
     border-radius: 50%;
-    width: 80px;
+    width: 100px;
 
 }
 
@@ -347,6 +346,8 @@ h8 {
     color: white;
     font-size: 30px;
 }
+
+
 
 
 
@@ -673,6 +674,31 @@ margin-top: 70px;
 font-variant: small-caps;
 }
 
+
+/* PlanWrap */
+#planwrap {
+  background: url("../img/plan.png") no-repeat center top; 
+  background-color: black;
+  margin-top: 1px;
+  padding-top: 390px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 150px;
+  width: 100%;
+  
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
 .rest > h1 {
     margin-bottom: 35px;
     font-size: 40px;
@@ -681,9 +707,10 @@ font-variant: small-caps;
 .rest {
     width: 100%;
     height: 500px;
-    margin-top: 30px;
+
     z-index: 200;
     border-bottom: 7px solid #f3f3f3;
+    border-top: 7px solid #f3f3f3;
 } 
 
 .lock  {
@@ -711,7 +738,9 @@ font-variant: small-caps;
     border-radius: 60%;
     z-index:-10;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 15px;
+    border: 7px solid #f3f3f3;
+    opacity: 0;
 }
 
 .phone-info {
@@ -752,11 +781,8 @@ font-variant: small-caps;
     right: 0;
     left: 0;
     margin: -42px 20px 0px auto;
-
     z-index: -20;
-
 }
-
 
 #secure {
      width: 340px;
@@ -974,6 +1000,24 @@ margin-top: -40px;
     width:100%;
     height: 20px;
 }
+
+.fit-models {
+  width: 100%;
+  height: auto;
+}
+
+.plan-space {
+  margin: 20px 0;
+  color: black;
+  font-size: 40px;
+}
+
+.plan-ahead {
+  color: white;
+  padding: 40px 0;
+}
+
+
 
 
 /*  1st break from media queries */
