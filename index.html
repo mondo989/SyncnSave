@@ -41,7 +41,7 @@
           </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-               <button class="btn top-btn sign-in  btn-lg" type="submit">Sign In</button>
+               <button class="btn top-btn sign-in-btn btn-lg" onClick="parent.location='login.html'">Sign In</button>
                <a href="https://play.google.com/store/apps/details?id=com.syncnscan.security&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5zeW5jbnNjYW4uc2VjdXJpdHkiXQ.."><button class="btn top-btn call-to-action  btn-lg" type="submit">Download Now</button></a>
 
           </ul>
@@ -49,15 +49,27 @@
       </div>
     </div>
 
+<!-- Adding the arrow here for easier loading -->
+                          <img src="./img/arrowdown.png" alt="" class="main-arrow"
+                            data-0= "opacity: .71;"
+                            data-20 = "opacity: 0;"
+                          >
+
+
 <div id="headerwrap">
    <div class="container">
       <div class="row">
 
          <div class="col-md-4 ">
-             <img class="hero-smartphone slideUpRetourn" src="img/main.png" alt="">
+             <img class="hero-smartphone slideUpRetourn" src="img/main.png" alt=""
+          data-0="margin-top: 130px; transform: rotate(0deg);"
+          data-20="margin-top: 450px; margin-left: 60px; transform: rotate(90deg); transition: 1s; opacity: 1;"
+            data-240=" opacity: 0;"
+
+             >
          </div><!-- /col-sm-4 -->
          <div class="col-sm-12 col-md-8 centered ">
-               <div class="white-border-bottom main-header ">your smartphone <br> protection plan.</div>    
+               <div class=" main-header ">your smartphone <br> protection plan.</div>    
              <!--  <button class="btn download call-to-action btn-lg" type="submit">Download Now</button>  -->
                 <a href="https://play.google.com/store/apps/details?id=com.syncnscan.security&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5zeW5jbnNjYW4uc2VjdXJpdHkiXQ.."><button class="hero-button btn-space">Download Now</button></a>
                <h6 class="extra-info">Available in : 
@@ -71,41 +83,35 @@
    </div><!-- /container -->
 </div><!-- /headerwrap -->
 		
-	<section class="rest"
+<div class="rest"
           data-100="opacity: 0;"
-          data-250="opacity: 1;"
+          data-302="opacity: 1; margin-top: 240px;"
       >
           <div class="lock-circle"
-              data-0="opacity: 0;"
-              data-100="opacity: 0;"
-              data-200="opacity: 1; width: 100px; height: 100px;" 
-              data-300="width: 170px; height: 170px;" 
+              data-122="opacity: 0; width: 17px; height: 17px;" 
+              data-302="opacity: 1; width: 170px; height: 170px;" 
           >
           <div class="lockk"
              data-0="opacity: 0;"
-             data-200="opacity: 0.01; width: 40px; height: 65px;"
+             data-282="opacity: 0; width: 40px; height: 65px;"
              data-300="opacity: 1; width: 80px; height: 130px;" 
                   ></div>
           </div>
 
 <div class="row md centered">
   <section class="left-anim"
-        data-250="opacity: 0; margin-left: 100px;  margin-top: 340px; height: 6px; width: 2px;"
-        data-300="opacity: .31; margin-left: 0; transition: 1.2s; width: 240px; height: 360px; margin-bottom: 0; margin-top: -240px;" 
-        data-400="opacity: 1; width: 300px; transition: 1s;"
-        data-450="margin-left: 20%;"
+        data-123="opacity: 0; margin-left: 100px;  margin-top: 340px; transform: rotate(180deg); margin-top: -240px;"
+        data-270="margin-left: 0; width: 240px; height: 360px; margin-bottom: 0;" 
+        data-400=" width: 300px; transition: 1s;"
+        data-450="opacity: 1; margin-left: 20%; transform: rotate(0deg);"
  ><img src="./img/rightanim.png" alt=""></section>
 <section class="right-anim"
-       data-250="opacity: 0; margin-right: 100px;  margin-top: 340px; height: 6px; width: 2px;"
-      data-300="opacity: .31; margin-right: 0; transition: 1.2s; width: 240px; height: 360px; margin-top: -240px;" 
-      data-400="opacity: 1; width: 300px; transition: 1s;"
-      data-450="margin-right: 20%;"
+       data-250="margin-right: 100px; margin-top: 340px; transform: rotate(180deg); margin-top: -240px;"
+       data-300="margin-right: 0;" 
+       data-400="opacity: 0; width: 300px; transition: 1s;"
+       data-450="opacity: 1; margin-right: 20%; transform: rotate(0deg);"
 
 ><img src="./img/leftanim.png" alt=""></section>
-
-
-
-
                 <div class="col-md-1"></div>
 			<div class="col-md-10 ">
 				<h1 class="h1-font">Rest assured, we've got you insured.</h1>
@@ -115,7 +121,7 @@
 		</div><!-- /row -->
 
 
-      </section>
+      </div>
 
 
 <div class="container mt">
@@ -229,54 +235,12 @@
               <p class="review">"Best App One of the best app available on Google Play" <br>-Sathvik Rao</p>
               </blockquote>
             </div>
-
-
-
-
- 
-                    
-
           </div>
         </div>
       </div>              
     </div>
   </div>
 </div>
-
-
-
-
-                  <!-- Carousel Copy if we need to use it again. 
-
-                  		<div class="row mt centered">
-                  			<div class="col-lg-6 col-lg-offset-3">
-                  				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                  				  <-Indicators ->
-
-                  				  <ol class="carousel-indicators">
-                  				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                  				  </ol>
-                  				
-                  				  <- Wrapper for slides ->
-                  				  <div class="carousel-inner">
-                  				    <div class="item active">
-                  				      <img src="img/p01.png" alt="">
-                  				    </div>
-                  				    <div class="item">
-                  				      <img src="img/p02.png" alt="">
-                  				    </div>
-                  				    <div class="item">
-                  				      <img src="img/p03.png" alt="">
-                  				    </div>
-                  				  </div>
-                  				</div>			
-                  			</div>
-                  		</div>
-                  	</div> -->
-	
-
 
 	<div class="container">
             <div class="row centered">
@@ -288,6 +252,8 @@
 	</div><!-- /container -->
 </div>
 	
+
+
 
 
 
@@ -330,10 +296,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/sns.js"></script>
 
 
-
-<!-- Disabling Skrollr if screensize is less than 500px -->
+<!-- Disabling Skrollr onload if screensize is less than 500px -->
       <script>
       if (screen && screen.width > 500) {
         document.write('<script type="text/javascript" src="js/skrollr.min.js"><\/script>');
