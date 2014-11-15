@@ -13,6 +13,7 @@
   html,body{
     height: 100%;
     overflow-y: scroll;
+    min-height: 700px;
   }
     .affix-content .container .page-header{
     margin-top: 0;
@@ -321,7 +322,7 @@ height: 40px;
   width: 80%;
   margin: 0 auto;
   float: right;
-
+  z-index: 90000;
 }
 
 .collapse {
@@ -370,4 +371,8 @@ height: 40px;
   .sidebar-nav .navbar li a:hover {
     background: transparent;
     color: white;
+  }
+
+  .text-left {
+    text-align: left; 
   }
